@@ -8,6 +8,8 @@ import { MaterialModule } from './material.module';
 import { LoadingComponent } from './loading/loading.component';
 import { RouterModule } from '@angular/router';
 import { UploadFilesComponent } from './upload-files/upload-files.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationComponent } from './translation/translation.component';
 
 
 
@@ -18,21 +20,22 @@ import { UploadFilesComponent } from './upload-files/upload-files.component';
     HeaderComponent,
     SidebarComponent,
     LoadingComponent,
-    UploadFilesComponent
-    // RequestBoxInfoComponent
+    UploadFilesComponent,
+    TranslationComponent
   ],
   imports: [
     RouterModule,
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    TranslateModule
   ],
   exports: [
     BreadcrumbsComponent,
     HeaderComponent,
     SidebarComponent,
     LoadingComponent,
-    UploadFilesComponent
-    // RequestBoxInfoComponent
+    UploadFilesComponent,
+    TranslationComponent
   ]
 })
 export class SharedModule { }

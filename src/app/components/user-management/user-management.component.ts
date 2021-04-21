@@ -5,6 +5,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-user-management',
@@ -14,7 +15,7 @@ import {
 export class UserManagementComponent implements OnInit {
   form!: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, translate: TranslateService) {
     this.createForm();
   }
 
