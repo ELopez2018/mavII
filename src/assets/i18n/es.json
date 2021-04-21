@@ -1,4 +1,17 @@
 {
-"Search": "Búsqueda",
-"User Registration": "Registro de Usuarios"
+  "Search": "Búsqueda",
+  "User Registration": "Registro de Usuarios",
+  "Record": "Expediente",
+  "Records": "Expedientes",
+  "File number": "Número  de expediente",
+  "Name": "Nombre",
+  "Second name": "Segundo nombre",
+  "Surname": "Primer apellido",
+  "Second surname": "Segundo apellido",
+  "Upload file": "Subida de archivo",
+  "Description": "Descripcion",
+  "file": "Archivo",
+  "Id": "No",
+  "Url": "Url",
+  "Actions": "Acciones"
 }

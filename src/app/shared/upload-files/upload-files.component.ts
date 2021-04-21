@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-upload-files',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./upload-files.component.scss']
 })
 export class UploadFilesComponent implements OnInit {
-
+  @Input() subTitleForm: string ="Expediente";
   constructor() { }
 
   ngOnInit(): void {
