@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'main',
-    loadChildren: () => import('./main/main.module').then((m) => m.MainModule),  canLoad: [AuthGuard]
+    loadChildren: () => import('./main/main.module').then((m) => m.MainModule),  canActivate: [AuthGuard],
   },
   { path: 'solicitudes', loadChildren: () => import('./main/requests-status/requests-status.module').then(m => m.RequestsStatusModule) },
   // { path: 'registro-de-roles', loadChildren: () => import('./components/role-register/role-register.module').then(m => m.RoleRegisterModule) },

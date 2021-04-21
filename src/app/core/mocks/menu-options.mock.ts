@@ -42,6 +42,29 @@ export const mockMenuItemsData = (): any[] => {
       ],
     },
     {
+      label: 'Expedientes',
+      routerLink: ['../inicio'],
+      default: true,
+      visible: true,
+      url: '#',
+      icon: 'mdi mdi-archive',
+      id: '2',
+      order: '2',
+      type: 'Vista',
+      submenu: [
+        {
+          label: 'Registro',
+          icon: 'mdi mdi-gauge',
+          routerLink: ['./expedientes'],
+        },
+        {
+          label: 'Histórico',
+          icon: 'mdi mdi-gauge',
+          routerLink: ['./administracion-solicitudes'],
+        },
+      ],
+    },
+    {
       label: 'Configuracion',
       routerLink: ['../inicio'],
       default: true,

@@ -14,8 +14,8 @@ import { RequestsComponent } from './requests/requests.component';
 @NgModule({
   declarations: [
     MainComponent,
-    RequestBoxInfoComponent,
     DashboardComponent,
+    RequestBoxInfoComponent,
     BillingInfoComponent,
     LastCaseInfoComponent,
     ActivityClientInfoComponent,

@@ -10,15 +10,16 @@ const routes: Routes = [
     path: '',
     component: MainComponent,
     children: [
-      // { path: '', component: DashboardComponent },
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-      { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+      { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+      // { path: '**',  component: DashboardComponent  },
+      { path: 'inicio', component: DashboardComponent },
       { path: 'solicitudes', component: RequestsStatusComponent },
       { path: 'solicitudes/:id', component: RequestsStatusComponent },
       { path: 'registro-de-roles', loadChildren: () => import('../components/role-register/role-register.module').then(m => m.RoleRegisterModule) },
       { path: 'administracion-solicitudes', loadChildren: () => import('../components/request-management/request-management.module').then(m => m.RequestManagementModule) },
       { path: 'administracion-usuarios', loadChildren: () => import('../components/user-management/user-management.module').then(m => m.UserManagementModule) },
-      { path: '**',  component: DashboardComponent  },
+      { path: 'expedientes', loadChildren: () => import('../components/record/record.module').then(m => m.RecordModule) },
+      { path: '**', redirectTo: 'inicio', pathMatch: 'full' },
     ]
   },
 ];

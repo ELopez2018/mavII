@@ -7,6 +7,7 @@ import { RequestBoxInfoComponent } from '@root/main/request-box-info/request-box
 import { MaterialModule } from './material.module';
 import { LoadingComponent } from './loading/loading.component';
 import { RouterModule } from '@angular/router';
+import { UploadFilesComponent } from './upload-files/upload-files.component';
 
 
 
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
     BreadcrumbsComponent,
     HeaderComponent,
     SidebarComponent,
-    LoadingComponent
+    LoadingComponent,
+    UploadFilesComponent
     // RequestBoxInfoComponent
   ],
   imports: [
@@ -29,6 +31,7 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     SidebarComponent,
     LoadingComponent,
+    UploadFilesComponent
     // RequestBoxInfoComponent
   ]
 })

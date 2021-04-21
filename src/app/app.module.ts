@@ -19,9 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     SharedModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     CoreModule.forRoot(),
