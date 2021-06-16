@@ -1,7 +1,7 @@
 export const mockMenuItemsData = (): any[] => {
   return [
     {
-      label: 'Principal',
+      label: 'Home',
       routerLink: ['../inicio'],
       default: true,
       visible: true,
@@ -12,14 +12,14 @@ export const mockMenuItemsData = (): any[] => {
       type: 'Vista',
       submenu: [
         {
-          label: 'Inicio',
+          label: 'Home',
           icon: 'mdi mdi-gauge',
           routerLink: ['/main/dashboard'],
         },
       ],
     },
     {
-      label: 'Solicitudes',
+      label: 'Requests',
       routerLink: ['../inicio'],
       default: true,
       visible: true,
@@ -30,19 +30,19 @@ export const mockMenuItemsData = (): any[] => {
       type: 'Vista',
       submenu: [
         {
-          label: 'Registro de usuarios',
+          label: 'User Registration',
           icon: 'mdi mdi-gauge',
           routerLink: ['./administracion-usuarios'],
         },
         {
-          label: 'Registro de Solicitudes',
+          label: 'Requests Registration',
           icon: 'mdi mdi-gauge',
           routerLink: ['./administracion-solicitudes'],
         },
       ],
     },
     {
-      label: 'Expedientes',
+      label: 'Records',
       routerLink: ['../inicio'],
       default: true,
       visible: true,
@@ -53,19 +53,19 @@ export const mockMenuItemsData = (): any[] => {
       type: 'Vista',
       submenu: [
         {
-          label: 'Registro',
+          label: 'Registry',
           icon: 'mdi mdi-gauge',
           routerLink: ['./expedientes'],
         },
         {
-          label: 'Histórico',
+          label: 'Historical',
           icon: 'mdi mdi-gauge',
           routerLink: ['./administracion-solicitudes'],
         },
       ],
     },
     {
-      label: 'Configuracion',
+      label: 'Setting',
       routerLink: ['../inicio'],
       default: true,
       visible: true,

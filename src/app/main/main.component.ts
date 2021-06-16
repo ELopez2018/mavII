@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { UserFacadeService } from '@facades/auth/user-facade.service';
 import { UserModel } from '@models/user.model';
 import { AuthFacadeService } from '@root/auth/login/auth.facade.service';
 import { LocalStorageService } from '@services/local-storage.service';

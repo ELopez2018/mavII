@@ -23,10 +23,10 @@
 
         <li *ngFor="let item of menuSidebar">
           <a *ngIf="item.visible" (click)="collapse()" class="has-arrow waves-effect waves-dark"
-            aria-expanded="false"> <i class="{{ item.icon }}"></i><span class="hide-menu">{{ item.label }}</span></a>
+            aria-expanded="false"> <i class="{{ item.icon }}"></i><span class="hide-menu">{{ item.label | translate }}</span></a>
           <ul aria-expanded="false" class="collapse">
             <li *ngFor="let subnenu of item.submenu"><a [routerLink]="subnenu.routerLink" routerLinkActive="active">{{
-                subnenu.label}}</a></li>
+                subnenu.label | translate }}</a></li>
           </ul>
 
         </li>

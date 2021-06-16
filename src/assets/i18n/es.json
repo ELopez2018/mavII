@@ -10,8 +10,15 @@
   "Second surname": "Segundo apellido",
   "Upload file": "Subida de archivo",
   "Description": "Descripcion",
-  "file": "Archivo",
+  "File": "Archivo",
+  "Files": "Archivos",
   "Id": "No",
   "Url": "Url",
+  "Registry": "Registro",
+  "Setting": "Configuración",
+  "Roles": "Roles",
+  "Home": "Inicio",
+  "Requests Registration":"Registro de Solicitudes",
+  "Requests":"Solicitudes",
   "Actions": "Acciones"
 }
